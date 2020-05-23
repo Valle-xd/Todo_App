@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:todo_app/UI/Liste/Liste_page.dart';
 import 'models/global.dart';
 
 void main() => runApp(MyApp());
@@ -39,9 +40,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   children: <Widget>
                   [ TabBarView(
                   children: [
-                    new Container(
-                      color: darkgreyColor,
-                    ),
+                    ListePage(), 
                     new Container(color: Colors.orange,),
                     new Container(
                       color: Colors.lightGreen,
